@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:personal_porfolio/views/home/home_screen.dart';
 
 import 'custom_widget/bottom_navbar.dart';
 import 'custom_widget/custom_appbar.dart';
@@ -27,7 +28,14 @@ class _AppStartState extends State<AppStart> with TickerProviderStateMixin {
         ),
         body: TabBarView(
           controller: _tabController,
-          children: [],
+          children: [
+            //HomePage
+            HomeScreen(tabController: _tabController),
+            //Projects
+            HomeScreen(tabController: _tabController),
+            //About
+            HomeScreen(tabController: _tabController),
+          ],
           physics: MediaQuery.of(context).size.width < 400
               ? PageScrollPhysics()
               : NeverScrollableScrollPhysics(),

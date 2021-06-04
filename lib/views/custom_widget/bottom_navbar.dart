@@ -14,7 +14,7 @@ class BottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Theme.of(context).backgroundColor,
-      height: 50,
+      height: 48,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -22,7 +22,7 @@ class BottomNavBar extends StatelessWidget {
             onTap: () async =>
                 urlLauncher("https://www.twitter.com/i_m_alfaizkhan"),
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 10),
+              margin: EdgeInsets.symmetric(horizontal: 16),
               child: Image.asset(
                 "assets/images/twitter.png",
                 width: 30,
@@ -33,7 +33,7 @@ class BottomNavBar extends StatelessWidget {
           GestureDetector(
             onTap: () async => urlLauncher("https://www.github.com/Alfaizkhan"),
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 10),
+              margin: EdgeInsets.symmetric(horizontal: 16),
               child: Image.asset(
                 "assets/images/github.png",
                 width: 30,
@@ -45,7 +45,7 @@ class BottomNavBar extends StatelessWidget {
             onTap: () async =>
                 urlLauncher("https://www.linkedin.com/in/alfaizkhan"),
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 10),
+              margin: EdgeInsets.symmetric(horizontal: 16),
               child: Image.asset(
                 "assets/images/linkedin.png",
                 width: 30,
